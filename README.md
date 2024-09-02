@@ -1,7 +1,14 @@
 # Smokin-joes-pizza
 
-# Description
-Smokin’ Joe’s Pizza is a Static and interactive web application designed to showcase the menu and services of a fictional pizza restaurant. The project leverages modern web technologies to create an engaging user experience with smooth animations and responsive design which is programmed by these languages - HTML,CSS,JAVASCRIPT,BOOTSTRAP,JAVASCRIPT LIBRARIES such as GSAP ,SCROLL TRIGGER and more 
+# __Description__
+Smokin’ Joe’s Pizza is a Static and interactive web application designed to showcase the menu and services of a fictional pizza restaurant. The project leverages modern web technologies to create an engaging user experience with **smooth animations** and **responsive design** which is programmed by these languages - <br>
+HTML,<br>
+CSS,<br>
+JAVASCRIPT,<br>
+BOOTSTRAP,<br>
+JAVASCRIPT LIBRARIES such as <br>
+GSAP,<br>
+SCROLL TRIGGER and more 
 
 # Problems identified
 •	The home page is packed with low resolution images.
