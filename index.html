@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>js+gsap+slider</title>
+
+  <!-- bottstrap cdn  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" >
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- locomotive gsap cdn  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+  <!-- font icons  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- custom css  -->
+  <link rel="stylesheet" href="/assets/styles/style.css">
+
+</head>
+
+<body>
+  <div class="main">
+    <div class="slider"></div>
+    <div class="page1">  
+        <nav class="navbar navbar-expand-xxxl navbar-dark fixed-top">
+        
+          <div class="container">
+            <a class="navbar-brand "  href="#"><img style="width: 26vh;" src="assets/images/Index-images/logo-pizza.png" alt="no image"></a>
+
+            <div class="search m-auto m-1">
+              <input class="form-control" type="search" placeholder="Search here . . ." aria-label="Search">
+              <button class="btn btn-success" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+  
+          </div>
+
+          <div class="deals">
+            <button class="btn btn-outline-danger"><i class="fa fa-ticket" style="color: black;"></i>     Deals</button>
+          </div>
+
+            
+          <button class="navbar-toggler" type="button"
+              data-bs-toggle="offcanvas" 
+              data-bs-target="#navbarOffcanvas"
+              aria-controls="navbarOffcanvas"
+              aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end bg-secondary" style="border: 2px solid rgb(255, 255, 255); height: 149vw;" id="navbarOffcanvas"
+                tabindex="-1" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header bg-warning">
+                  <h5 class="offcanvas-title text-light mx-3 " id="offcanvasNavbarLabel"><a class="navbar-brand "  href="#"><img style="width: 26vh;" src="assets/images/Index-images/logo-pizza.png" alt="no image"></a></h5>
+                  <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" style="background-color: brown;">          
+                  <div class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <a class="nav-item nav-link" href="index.html">Home</a>
+                    <a class="nav-item nav-link" href="about.html">About</a>
+                    <a class="nav-item nav-link" href="location.html">Location</a>
+                    <a class="nav-item nav-link" href="about.html">Menu</a>
+                    
+                      <!-- <ul class="navbar-nav" >
+                        <li class="nav-item dropdown">
+                          <a class="nav-link active dropdown-toggle" style="color: rgb(255, 252, 252);" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Menu
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                        </li>
+                      </ul> -->
+                  
+                    <a class="nav-item nav-link" href="Franchise.html">Franchise</a>
+                    <!-- <ul class="navbar-nav" >
+                      <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" style="color: rgb(255, 252, 252);" href="location.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Location
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                    </ul> -->
+                    <a class="nav-item nav-link" href="Feedback.html">Feedback</a>
+                    <a class="nav-item nav-link" aria-current="page" href="contact.html">Contact</a>
+
+                    
+                  </div>
+                  <button class="btn btn-danger"><a href="#">login</a></button>
+                  <button class="btn btn-success"><a href="#">Register</a></button>
+                </div>
+            </div>  
+          </div>
+        </nav>
+
+      
+      
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-6 col-sm-push-6">
+              <div class="left" >
+                <img src="assets/images/Index-images/Screenshot 2024-08-06 223422-Photoroom.png" alt="no image">
+              </div>
+            </div>
+
+            <div class="second col-sm-6 col-sm-pull-6">
+              <div class="heroright">
+                <h1 class="">Smokin’ Joe’s pizza</h1>
+                <p class="fs-5 text-dark" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam hic error nemo dolores ullam dolorem aliquam, incidunt sapiente debitis sequi.</p>	
+                <button class="btn btn-warning ">View on maps</button>
+              </div>
+            </div> 
+          </div>
+        </div>
+        <video class="mp4" autoplay muted loop src="https://videos.pexels.com/video-files/4457933/4457933-uhd_2560_1440_24fps.mp4"></video>
+        <!-- <video autoplay muted loop src="https://videos.pexels.com/video-files/7148096/7148096-uhd_2560_1440_30fps.mp4"></video> -->
+    </div>
+
+
+    <div class="page2">
+      <h2 class="text-center py-2 fs-1" >NEW ARRIVALS</h2>
+      <div class="text-center">
+        <img src="assets/images/Index-images/pizza-menu.jpg" alt="no image">
+      </div>
+    </div>
+
+    <div class="page3">
+      <div class="container-fluid">
+        <h1 class="text-center py-5" style="color: red;">Our Story</h1>
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-sm-push-6">
+            <div class="left3">
+              <img src="assets/images/Index-images/cheif-pizza.png" alt="no image">
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-sm-pull-6">
+            <div class="heroright3">
+              <h1 style="color: red;">The Legend of Smokin’ Joe’s</h1>
+              <p style="color: black;">Long ago, there was a Mexican cowboy called Jose Mancini (Joe) who worked on a farm in Texas, USA. One day as Joe was returning home, he was stopped by the heavenly aroma of food that came from a bakery nearby. On entering, Joe found a beautiful girl called Isabella working there. She belonged to an immigrant family from Sicily. Italy....</p>	
+              <button class="btn btn-danger">Read more</button>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+
+
+    <div class="menuimg text-center py-5">
+      <img src="assets/images/Index-images/menu-design-pizza.png" cover alt="no image" srcset="">
+    </div>
+
+
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+  
+            <div class="col-lg-4 col-md-6 footer-info">
+              <img src="assets/images/about-images/45eb98c8637d591a1bde451eb1bce941.png" alt="TheEvenet">
+            </div>
+  
+           
+  
+            <div class="col-lg-4 col-md-6 footer-links p-5 m-0">
+              <h4>Links</h4>
+              <ul class="m-0">
+                <li><i class="fa fa-angle-right py-1"></i> <a href="#">Home</a></li>
+                <li><i class="fa fa-angle-right py-1"></i> <a href="#">About us</a></li>
+                <li><i class="fa fa-angle-right py-1"></i> <a href="#">Locations</a></li>
+                <li><i class="fa fa-angle-right py-1"></i> <a href="#">Franchise</a></li>
+                <li><i class="fa fa-angle-right py-1"></i> <a href="#">Menu</a></li>
+                <li><i class="fa fa-angle-right py-1"></i> <a href="#">Feedback</a></li>
+                <li><i class="fa fa-angle-right py-1"></i> <a href="#">Download Menu</a></li>
+  
+              </ul>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 footer-contact p-5">
+              <h4>Contact Us</h4>
+              <p>
+                Smokin' Joe's Pizza Private Limited
+                20, Matru Ashish, 39 Nepean Sea Road,
+                Mumbai <br>
+                <div class="col text-dark" style="padding-left:1px;">Tel: <a href="">022 2367 9727</a>/<a href="">2367 9728</a></div>
+                <div class="col text-dark" style="padding-left:1px;">Fax: <a href="">23679728</a></div>
+                <div class="col text-dark" style="padding-left:1px;">Email: <a href="">feedback@smokinjoespizza.com</a></div>
+            
+  
+              </p>
+  
+              <div class="social-links">
+                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="fab fa-google-plus"></i></a>
+                 </div>
+  
+            </div>
+  
+          </div>
+        </div>
+      </div>
+      
+        <div class="copyright py-2">
+                       
+          &copy; Copyright 2024 Smokin' Joe's Pizza Private Limited | <a href="#">Terms of service</a> | <a href="#">Privacy policy</a>
+          <div class="credits">
+        
+            Designed by <a href="">Gopalakrishnan</a>
+          </div>
+        </div>
+       
+    
+    </footer><!-- #footer -->
+  
+
+
+  </div>  <!--main -->
+
+
+
+
+
+
+
+
+
+<!-- cdn links  -->
+<!-- tweenmax cdn  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+<!-- timelinemax cdn  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
+<!-- bootstrap links  -->
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>  
+<!-- locomotive scroll cdn  -->
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+<!-- gsap cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- gsap scroll trigger cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- custom js -->
+<script src="/assets/Javascript/script.js"></script>
+</body>
+
+</html>
