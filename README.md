@@ -10,6 +10,13 @@ JAVASCRIPT LIBRARIES such as <br>
 GSAP,<br>
 SCROLL TRIGGER and more 
 
+
+https://github.com/user-attachments/assets/66ce9f03-fcff-4853-b7b0-9ed8ebb064a7
+
+
+
+
+
 # Problems identified
 •	The home page is packed with low resolution images.
 
