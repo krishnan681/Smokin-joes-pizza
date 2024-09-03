@@ -10,7 +10,7 @@ JAVASCRIPT LIBRARIES such as <br>
 GSAP,<br>
 SCROLL TRIGGER and more 
 
-
+# __Here's the sample__
 https://github.com/user-attachments/assets/66ce9f03-fcff-4853-b7b0-9ed8ebb064a7
 
 
